@@ -5,8 +5,9 @@
 #include <QtSerialPort/QSerialPort>
 #include <QtSerialPort/QSerialPortInfo>
 #include <QStringList>
+#include "basededonnees.h"
 
-
+//class basededonnees;
 
 class projet : public QObject
 {
@@ -26,11 +27,13 @@ private:
     float ValeurLAT;
     float ValeurLONG;
     float Debit;
+    float Vitesse;
     QString Text;
     QString TextData;
     QString data="";
     QStringList list;
     QString Donnees;
+    basededonnees base;
 
 signals:
      void chargementport(QStringList list);
@@ -39,6 +42,7 @@ signals:
      void testData(QString Donnees);
      void gpsLatitude(float ValeurLAT, float ValeurLONG);
      void timerOK();
+     void sendToDataBase(float ValeurLAT, float ValeurLONG, float ValeurX, float ValeurY, float ValeurZ, float Debit, float Vitesse);
 
 public slots:
      void currentTextChanged(const QString Affiche);

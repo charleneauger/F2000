@@ -11,13 +11,13 @@ MAKEFILE      = Makefile.Release
 
 CC            = gcc
 CXX           = g++
-DEFINES       = -DUNICODE -DQT_QML_DEBUG -DQT_NO_DEBUG -DQT_LOCATION_LIB -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_SERIALPORT_LIB -DQT_QML_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_POSITIONING_LIB -DQT_CORE_LIB -DQT_NEEDS_QMAIN
+DEFINES       = -DUNICODE -DQT_QML_DEBUG -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_LOCATION_LIB -DQT_QUICK_LIB -DQT_MULTIMEDIA_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_SERIALPORT_LIB -DQT_QML_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_POSITIONING_LIB -DQT_CORE_LIB -DQT_NEEDS_QMAIN
 CFLAGS        = -pipe -fno-keep-inline-dllexport -O2 -Wall -Wextra $(DEFINES)
 CXXFLAGS      = -pipe -fno-keep-inline-dllexport -O2 -std=gnu++11 -frtti -Wall -Wextra -fexceptions -mthreads $(DEFINES)
-INCPATH       = -I. -IC:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\include\VPlay -IC:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\include -IC:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\include\QtLocation -IC:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\include\QtQuick -IC:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\include\QtWidgets -IC:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\include\QtMultimedia -IC:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\include\QtGui -IC:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\include\QtANGLE -IC:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\include\QtSql -IC:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\include\QtSerialPort -IC:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\include\QtQml -IC:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\include\QtWebSockets -IC:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\include\QtNetwork -IC:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\include\QtPositioning -IC:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\include\QtCore -Irelease -IC:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\win32-g++ 
+INCPATH       = -I. -IC:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\include\VPlay -IC:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\include -IC:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\include\QtWidgets -IC:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\include\QtLocation -IC:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\include\QtQuick -IC:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\include\QtMultimedia -IC:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\include\QtGui -IC:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\include\QtANGLE -IC:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\include\QtSql -IC:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\include\QtSerialPort -IC:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\include\QtQml -IC:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\include\QtWebSockets -IC:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\include\QtNetwork -IC:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\include\QtPositioning -IC:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\include\QtCore -Irelease -IC:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\win32-g++ 
 LINKER      =        g++
 LFLAGS        =        -Wl,-s -Wl,-subsystem,windows -mthreads
-LIBS        =        -lmingw32 -LC:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\libqtmain.a -LC:\utils\my_sql\my_sql\lib -LC:\utils\postgresql\pgsql\lib -lshell32 C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\libVPlay.a -lopengl32 C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\libQt5Location.a C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\libQt5Quick.a C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\libQt5Widgets.a C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\libQt5Multimedia.a C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\libQt5Gui.a C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\libQt5Sql.a C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\libQt5SerialPort.a C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\libQt5Qml.a C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\libQt5WebSockets.a C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\libQt5Network.a C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\libQt5Positioning.a C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\libQt5Core.a release\app_icon_res.o 
+LIBS        =        -lmingw32 -LC:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\libqtmain.a -LC:\utils\my_sql\my_sql\lib -LC:\utils\postgresql\pgsql\lib -lshell32 C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\libVPlay.a -lopengl32 C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\libQt5Widgets.a C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\libQt5Location.a C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\libQt5Quick.a C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\libQt5Multimedia.a C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\libQt5Gui.a C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\libQt5Sql.a C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\libQt5SerialPort.a C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\libQt5Qml.a C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\libQt5WebSockets.a C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\libQt5Network.a C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\libQt5Positioning.a C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\libQt5Core.a release\app_icon_res.o 
 QMAKE         = C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\bin\qmake.exe
 IDC           = idc
 IDL           = midl
@@ -82,7 +82,7 @@ qmake: FORCE
 qmake_all: FORCE
 
 dist:
-	$(ZIP) projet_V_Play.zip $(SOURCES) $(DIST) projet_V_Play.pro C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\spec_pre.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\qdevice.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\device_config.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\common\angle.conf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\qconfig.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_3dcore.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_3dcore_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_3dextras.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_3dextras_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_3dinput.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_3dinput_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_3dlogic.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_3dlogic_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_3dquick.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_3dquick_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_3dquickextras.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_3dquickextras_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_3dquickinput.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_3dquickinput_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_3dquickrender.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_3dquickrender_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_3drender.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_3drender_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_accessibility_support_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_axbase.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_axbase_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_axcontainer.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_axcontainer_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_axserver.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_axserver_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_bluetooth.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_bluetooth_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_bootstrap_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_clucene_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_concurrent.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_concurrent_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_core.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_core_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_dbus.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_dbus_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_designer.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_designer_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_designercomponents_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_devicediscovery_support_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_egl_support_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_eventdispatcher_support_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_fb_support_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_fontdatabase_support_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_gui.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_gui_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_help.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_help_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_location.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_location_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_multimedia.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_multimedia_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_multimediawidgets.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_multimediawidgets_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_network.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_network_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_nfc.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_nfc_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_opengl.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_opengl_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_openglextensions.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_openglextensions_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_packetprotocol_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_platformcompositor_support_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_positioning.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_positioning_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_printsupport.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_printsupport_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_qml.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_qml_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_qmldebug_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_qmldevtools_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_qmltest.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_qmltest_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_qtmultimediaquicktools_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_quick.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_quick_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_quickcontrols2.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_quickcontrols2_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_quickparticles_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_quicktemplates2_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_quickwidgets.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_quickwidgets_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_scxml.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_scxml_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_sensors.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_sensors_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_serialbus.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_serialbus_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_serialport.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_serialport_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_sql.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_sql_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_svg.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_svg_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_testlib.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_testlib_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_theme_support_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_uiplugin.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_uitools.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_uitools_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_webchannel.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_webchannel_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_websockets.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_websockets_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_widgets.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_widgets_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_winextras.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_winextras_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_xml.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_xml_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_xmlpatterns.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_xmlpatterns_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\qt_functions.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\qt_config.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\win32-g++\qmake.conf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\spec_post.prf .qmake.stash C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\exclusive_builds.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\toolchain.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\default_pre.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\win32\default_pre.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\resolve_config.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\exclusive_builds_post.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\default_post.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\build_pass.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\v-play.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\qml_debug.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\win32\rtti.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\precompile_header.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\warn_on.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\qt.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\resources.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\moc.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\win32\opengl.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\uic.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\qmake_use.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\file_copies.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\win32\windows.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\testcase_targets.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\exceptions.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\yacc.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\lex.prf projet_V_Play.pro C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\common\vplay\resources_user.qrc C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\qtmain.prl C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\VPlay.prl C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\Qt5Location.prl C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\Qt5Quick.prl C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\Qt5Widgets.prl C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\Qt5Multimedia.prl C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\Qt5Gui.prl C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\Qt5Sql.prl C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\Qt5SerialPort.prl C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\Qt5Qml.prl C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\Qt5WebSockets.prl C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\Qt5Network.prl C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\Qt5Positioning.prl C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\Qt5Core.prl   C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\common\vplay\resources_user.qrc C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\data\dummy.cpp projet.h basededonnees.h main.cpp projet.cpp basededonnees.cpp     
+	$(ZIP) projet_V_Play.zip $(SOURCES) $(DIST) projet_V_Play.pro C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\spec_pre.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\qdevice.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\device_config.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\common\angle.conf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\qconfig.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_3dcore.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_3dcore_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_3dextras.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_3dextras_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_3dinput.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_3dinput_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_3dlogic.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_3dlogic_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_3dquick.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_3dquick_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_3dquickextras.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_3dquickextras_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_3dquickinput.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_3dquickinput_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_3dquickrender.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_3dquickrender_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_3drender.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_3drender_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_accessibility_support_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_axbase.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_axbase_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_axcontainer.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_axcontainer_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_axserver.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_axserver_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_bluetooth.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_bluetooth_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_bootstrap_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_charts.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_charts_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_clucene_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_concurrent.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_concurrent_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_core.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_core_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_datavisualization.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_datavisualization_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_dbus.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_dbus_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_designer.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_designer_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_designercomponents_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_devicediscovery_support_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_egl_support_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_eventdispatcher_support_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_fb_support_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_fontdatabase_support_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_gamepad.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_gamepad_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_gui.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_gui_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_help.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_help_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_location.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_location_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_multimedia.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_multimedia_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_multimediawidgets.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_multimediawidgets_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_network.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_network_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_networkauth.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_networkauth_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_nfc.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_nfc_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_opengl.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_opengl_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_openglextensions.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_openglextensions_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_packetprotocol_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_platformcompositor_support_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_positioning.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_positioning_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_printsupport.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_printsupport_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_purchasing.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_purchasing_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_qml.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_qml_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_qmldebug_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_qmldevtools_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_qmltest.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_qmltest_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_qtmultimediaquicktools_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_quick.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_quick_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_quickcontrols2.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_quickcontrols2_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_quickparticles_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_quicktemplates2_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_quickwidgets.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_quickwidgets_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_script.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_script_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_scripttools.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_scripttools_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_scxml.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_scxml_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_sensors.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_sensors_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_serialbus.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_serialbus_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_serialport.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_serialport_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_sql.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_sql_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_svg.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_svg_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_testlib.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_testlib_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_texttospeech.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_texttospeech_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_theme_support_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_uiplugin.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_uitools.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_uitools_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_webchannel.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_webchannel_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_websockets.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_websockets_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_widgets.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_widgets_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_winextras.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_winextras_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_xml.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_xml_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_xmlpatterns.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\modules\qt_lib_xmlpatterns_private.pri C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\qt_functions.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\qt_config.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\win32-g++\qmake.conf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\spec_post.prf .qmake.stash C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\exclusive_builds.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\toolchain.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\default_pre.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\win32\default_pre.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\resolve_config.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\exclusive_builds_post.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\default_post.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\build_pass.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\v-play.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\qml_debug.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\win32\rtti.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\precompile_header.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\warn_on.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\qt.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\resources.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\moc.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\win32\opengl.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\uic.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\qmake_use.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\file_copies.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\win32\windows.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\testcase_targets.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\exceptions.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\yacc.prf C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\lex.prf projet_V_Play.pro C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\common\vplay\resources_user.qrc C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\qtmain.prl C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\VPlay.prl C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\Qt5Widgets.prl C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\Qt5Location.prl C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\Qt5Quick.prl C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\Qt5Multimedia.prl C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\Qt5Gui.prl C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\Qt5Sql.prl C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\Qt5SerialPort.prl C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\Qt5Qml.prl C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\Qt5WebSockets.prl C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\Qt5Network.prl C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\Qt5Positioning.prl C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\lib\Qt5Core.prl   C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\common\vplay\resources_user.qrc C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\mkspecs\features\data\dummy.cpp projet.h basededonnees.h main.cpp projet.cpp basededonnees.cpp     
 
 clean: compiler_clean 
 	-$(DEL_FILE) release\main.o release\projet.o release\basededonnees.o release\qrc_resources_user.o release\moc_projet.o release\moc_basededonnees.o
@@ -175,10 +175,208 @@ release/moc_projet.cpp: C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/Qt
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSerialPort/QSerialPortInfo \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSerialPort/qserialportinfo.h \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/QStringList \
+		basededonnees.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/QtSql \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/QtSqlDepends \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/QtCore \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/QtCoreDepends \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qabstractanimation.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qabstracteventdispatcher.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qeventloop.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qabstractitemmodel.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qvariant.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qmap.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qdebug.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qhash.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qtextstream.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qlocale.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qshareddata.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qvector.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qpoint.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qset.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qcontiguouscache.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qsharedpointer.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qsharedpointer_impl.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qabstractnativeeventfilter.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qabstractproxymodel.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qabstractstate.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qabstracttransition.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qanimationgroup.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qarraydataops.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qarraydatapointer.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qbasictimer.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qbitarray.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qbuffer.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qbytearraymatcher.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qcache.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qcollator.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qcommandlineoption.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qcommandlineparser.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qcoreapplication.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qcryptographichash.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qdatastream.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qdatetime.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qdeadlinetimer.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qelapsedtimer.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qdir.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qfileinfo.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qfile.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qfiledevice.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qdiriterator.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qeasingcurve.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qendian.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qeventtransition.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qexception.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qfactoryinterface.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qfileselector.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qfilesystemwatcher.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qfinalstate.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qfuture.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qfutureinterface.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qrunnable.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qresultstore.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qfuturesynchronizer.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qfuturewatcher.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qhistorystate.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qidentityproxymodel.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qisenum.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qitemselectionmodel.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qjsonarray.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qjsonvalue.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qjsondocument.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qjsonobject.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qlibrary.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qlibraryinfo.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qversionnumber.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qline.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qlinkedlist.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qlockfile.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qloggingcategory.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qmargins.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qmath.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qmessageauthenticationcode.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qmetaobject.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qmimedata.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qmimedatabase.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qmimetype.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qobjectcleanuphandler.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qparallelanimationgroup.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qpauseanimation.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qplugin.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qpointer.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qpluginloader.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qprocess.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qpropertyanimation.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qvariantanimation.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qqueue.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qreadwritelock.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qrect.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qsize.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qregularexpression.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qresource.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qsavefile.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qscopedvaluerollback.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qsemaphore.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qsequentialanimationgroup.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qsettings.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qsharedmemory.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qsignalmapper.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qsignaltransition.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qsocketnotifier.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qsortfilterproxymodel.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qstack.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qstandardpaths.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qstate.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qstatemachine.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qstorageinfo.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qstringlistmodel.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qsystemsemaphore.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qtemporarydir.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/QScopedPointer \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qtemporaryfile.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qtextboundaryfinder.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qtextcodec.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qthread.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qthreadpool.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qthreadstorage.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qtimeline.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qtimer.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qtimezone.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qtranslator.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qurl.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qurlquery.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/quuid.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qwaitcondition.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qwineventnotifier.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qxmlstream.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qtcoreversion.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qtsqlglobal.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qsqldatabase.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qsqldriver.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qsqldriverplugin.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qsqlerror.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qsqlfield.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qsqlindex.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qsqlrecord.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qsqlquery.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qsqlquerymodel.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qsqlrelationaldelegate.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qitemdelegate.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qtwidgetsglobal.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qtguiglobal.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qtgui-config.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qtwidgets-config.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qstyleoption.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qabstractspinbox.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qwidget.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qwindowdefs.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qwindowdefs_win.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qpaintdevice.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qpalette.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qcolor.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qrgb.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qrgba64.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qbrush.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qmatrix.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qpolygon.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qregion.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qtransform.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qpainterpath.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qimage.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qpixelformat.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qpixmap.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qfont.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qfontmetrics.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qfontinfo.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qsizepolicy.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qcursor.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qkeysequence.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qevent.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qvector2d.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qtouchdevice.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qvalidator.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qicon.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qslider.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qabstractslider.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qstyle.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qtabbar.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qtabwidget.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qrubberband.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qframe.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qlistview.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qabstractitemview.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qabstractscrollarea.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qcombobox.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qsqlrelationaltablemodel.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qsqltablemodel.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qsqlresult.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qtsqlversion.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/QSqlQuery \
 		projet.h \
 		release/moc_predefs.h \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/bin/moc.exe
-	C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\bin\moc.exe $(DEFINES) --include release/moc_predefs.h -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/win32-g++ -IH:/Classe_LEGT_STSSN2/auger.charlene/IR/PROJET/projet_V_Play -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/VPlay -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtLocation -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtQuick -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtMultimedia -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtANGLE -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSerialPort -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtQml -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWebSockets -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtPositioning -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore -IC:/Users/Utilisateur/V-PlaySDK/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Users/Utilisateur/V-PlaySDK/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Users/Utilisateur/V-PlaySDK/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Users/Utilisateur/V-PlaySDK/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Users/Utilisateur/V-PlaySDK/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Users/Utilisateur/V-PlaySDK/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward projet.h -o release\moc_projet.cpp
+	C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\bin\moc.exe $(DEFINES) --include release/moc_predefs.h -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/win32-g++ -IH:/Classe_LEGT_STSSN2/auger.charlene/IR/PROJET/projet_V_Play -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/VPlay -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtLocation -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtQuick -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtMultimedia -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtANGLE -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSerialPort -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtQml -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWebSockets -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtPositioning -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore -IC:/Users/Utilisateur/V-PlaySDK/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Users/Utilisateur/V-PlaySDK/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Users/Utilisateur/V-PlaySDK/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Users/Utilisateur/V-PlaySDK/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Users/Utilisateur/V-PlaySDK/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Users/Utilisateur/V-PlaySDK/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward projet.h -o release\moc_projet.cpp
 
 release/moc_basededonnees.cpp: C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/QObject \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qobject.h \
@@ -426,10 +624,11 @@ release/moc_basededonnees.cpp: C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/inc
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qsqltablemodel.h \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qsqlresult.h \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qtsqlversion.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/QSqlQuery \
 		basededonnees.h \
 		release/moc_predefs.h \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/bin/moc.exe
-	C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\bin\moc.exe $(DEFINES) --include release/moc_predefs.h -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/win32-g++ -IH:/Classe_LEGT_STSSN2/auger.charlene/IR/PROJET/projet_V_Play -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/VPlay -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtLocation -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtQuick -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtMultimedia -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtANGLE -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSerialPort -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtQml -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWebSockets -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtPositioning -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore -IC:/Users/Utilisateur/V-PlaySDK/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Users/Utilisateur/V-PlaySDK/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Users/Utilisateur/V-PlaySDK/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Users/Utilisateur/V-PlaySDK/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Users/Utilisateur/V-PlaySDK/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Users/Utilisateur/V-PlaySDK/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward basededonnees.h -o release\moc_basededonnees.cpp
+	C:\Users\Utilisateur\V-PlaySDK\5.8\mingw53_32\bin\moc.exe $(DEFINES) --include release/moc_predefs.h -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/win32-g++ -IH:/Classe_LEGT_STSSN2/auger.charlene/IR/PROJET/projet_V_Play -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/VPlay -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtLocation -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtQuick -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtMultimedia -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtANGLE -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSerialPort -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtQml -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWebSockets -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtPositioning -IC:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore -IC:/Users/Utilisateur/V-PlaySDK/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Users/Utilisateur/V-PlaySDK/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Users/Utilisateur/V-PlaySDK/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Users/Utilisateur/V-PlaySDK/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Users/Utilisateur/V-PlaySDK/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Users/Utilisateur/V-PlaySDK/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward basededonnees.h -o release\moc_basededonnees.cpp
 
 compiler_moc_source_make_all:
 compiler_moc_source_clean:
@@ -612,12 +811,224 @@ release/main.o: main.cpp C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/Q
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qsurfaceformat.h \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qicon.h \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtQml/QQmlEngine \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtQml/QtQml \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtQml/QtQmlDepends \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/QtCore \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/QtCoreDepends \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qabstracteventdispatcher.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qabstractitemmodel.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qabstractnativeeventfilter.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qabstractproxymodel.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qabstractstate.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qabstracttransition.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qanimationgroup.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qarraydataops.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qarraydatapointer.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qbasictimer.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qbitarray.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qbuffer.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qbytearraymatcher.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qcache.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qcollator.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qcommandlineoption.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qcommandlineparser.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qcryptographichash.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qdatetime.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qdeadlinetimer.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qelapsedtimer.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qdir.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qfileinfo.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qdiriterator.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qeasingcurve.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qendian.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qeventtransition.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qexception.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qfactoryinterface.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qfileselector.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qfilesystemwatcher.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qfinalstate.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qfuture.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qfutureinterface.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qrunnable.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qresultstore.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qfuturesynchronizer.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qfuturewatcher.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qhistorystate.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qidentityproxymodel.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qisenum.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qitemselectionmodel.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qjsonarray.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qjsonvalue.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qjsondocument.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qjsonobject.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qlibrary.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qlibraryinfo.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qversionnumber.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qlinkedlist.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qlockfile.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qloggingcategory.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qmath.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qmessageauthenticationcode.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qmimedata.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qmimedatabase.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qmimetype.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qobjectcleanuphandler.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qparallelanimationgroup.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qpauseanimation.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qplugin.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qpointer.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qpluginloader.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qprocess.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qpropertyanimation.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qvariantanimation.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qqueue.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qreadwritelock.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qregularexpression.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qresource.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qsavefile.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qscopedvaluerollback.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qsemaphore.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qsequentialanimationgroup.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qsettings.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qsharedmemory.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qsignalmapper.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qsignaltransition.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qsocketnotifier.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qsortfilterproxymodel.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qstack.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qstandardpaths.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qstate.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qstatemachine.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qstorageinfo.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qstringlistmodel.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qsystemsemaphore.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qtemporarydir.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/QScopedPointer \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qtemporaryfile.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qtextboundaryfinder.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qtextcodec.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qthread.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qthreadpool.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qthreadstorage.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qtimeline.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qtimer.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qtimezone.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qtranslator.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/quuid.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qwaitcondition.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qwineventnotifier.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qxmlstream.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qtcoreversion.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork/QtNetwork \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork/QtNetworkDepends \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork/qabstractnetworkcache.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork/qnetworkrequest.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/QSharedDataPointer \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/QString \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/QUrl \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/QVariant \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork/qabstractsocket.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork/qauthenticator.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork/qdnslookup.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork/qhostaddress.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork/qhostinfo.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork/qhttpmultipart.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/QByteArray \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/QIODevice \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork/QNetworkRequest \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork/qlocalserver.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork/qlocalsocket.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork/qnetworkaccessmanager.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork/QSslConfiguration \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork/qsslconfiguration.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork/qsslsocket.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork/qtcpsocket.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork/qsslerror.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork/qsslcertificate.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork/qssl.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/QFlags \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork/QSslPreSharedKeyAuthenticator \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork/qsslpresharedkeyauthenticator.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/QMetaType \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork/qnetworkconfigmanager.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork/qnetworkconfiguration.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork/qnetworkcookie.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/QList \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork/qnetworkcookiejar.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork/qnetworkdatagram.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork/qnetworkdiskcache.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork/qnetworkinterface.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork/qnetworkproxy.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork/qnetworkreply.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork/QNetworkAccessManager \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork/qnetworksession.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork/qsctpserver.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork/qtcpserver.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork/qsctpsocket.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork/qsslcertificateextension.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork/qsslcipher.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork/qssldiffiehellmanparameters.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork/qsslellipticcurve.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/QHash \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork/qsslkey.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork/qudpsocket.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork/qtnetworkversion.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtQml/qjsvalueiterator.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtQml/qqmlabstracturlinterceptor.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtQml/qqmlcomponent.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtQml/qqmlexpression.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtQml/qqmlscriptstring.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtQml/qqmlextensioninterface.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtQml/qqmlextensionplugin.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtQml/qqmlfile.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtQml/qqmlfileselector.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtQml/qqmlincubator.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtQml/qqmlinfo.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtQml/qqmlnetworkaccessmanagerfactory.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtQml/qqmlproperty.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtQml/qqmlpropertymap.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtQml/qtqmlversion.h \
 		projet.h \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSerialPort/QSerialPort \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSerialPort/qserialport.h \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSerialPort/qserialportglobal.h \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSerialPort/QSerialPortInfo \
-		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSerialPort/qserialportinfo.h
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSerialPort/qserialportinfo.h \
+		basededonnees.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/QtSql \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/QtSqlDepends \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qtsqlglobal.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qsqldatabase.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qsqldriver.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qsqldriverplugin.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qsqlerror.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qsqlfield.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qsqlindex.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qsqlrecord.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qsqlquery.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qsqlquerymodel.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qsqlrelationaldelegate.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qitemdelegate.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qstyleoption.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qabstractspinbox.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qvalidator.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qslider.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qabstractslider.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qstyle.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qtabbar.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qtabwidget.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qrubberband.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qframe.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qlistview.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qabstractitemview.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qabstractscrollarea.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qcombobox.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qsqlrelationaltablemodel.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qsqltablemodel.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qsqlresult.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qtsqlversion.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/QSqlQuery
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\main.o main.cpp
 
 release/projet.o: projet.cpp projet.h \
@@ -676,13 +1087,21 @@ release/projet.o: projet.cpp projet.h \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSerialPort/QSerialPortInfo \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSerialPort/qserialportinfo.h \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/QStringList \
-		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/QDebug \
+		basededonnees.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/QtSql \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/QtSqlDepends \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/QtCore \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/QtCoreDepends \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qabstractanimation.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qabstracteventdispatcher.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qeventloop.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qabstractitemmodel.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qvariant.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qmap.h \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qdebug.h \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qhash.h \
-		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qmap.h \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qtextstream.h \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qlocale.h \
-		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qvariant.h \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qshareddata.h \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qvector.h \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qpoint.h \
@@ -690,6 +1109,183 @@ release/projet.o: projet.cpp projet.h \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qcontiguouscache.h \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qsharedpointer.h \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qsharedpointer_impl.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qabstractnativeeventfilter.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qabstractproxymodel.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qabstractstate.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qabstracttransition.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qanimationgroup.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qarraydataops.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qarraydatapointer.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qbasictimer.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qbitarray.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qbuffer.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qbytearraymatcher.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qcache.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qcollator.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qcommandlineoption.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qcommandlineparser.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qcoreapplication.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qcryptographichash.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qdatastream.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qdatetime.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qdeadlinetimer.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qelapsedtimer.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qdir.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qfileinfo.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qfile.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qfiledevice.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qdiriterator.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qeasingcurve.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qendian.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qeventtransition.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qexception.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qfactoryinterface.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qfileselector.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qfilesystemwatcher.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qfinalstate.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qfuture.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qfutureinterface.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qrunnable.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qresultstore.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qfuturesynchronizer.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qfuturewatcher.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qhistorystate.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qidentityproxymodel.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qisenum.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qitemselectionmodel.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qjsonarray.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qjsonvalue.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qjsondocument.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qjsonobject.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qlibrary.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qlibraryinfo.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qversionnumber.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qline.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qlinkedlist.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qlockfile.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qloggingcategory.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qmargins.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qmath.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qmessageauthenticationcode.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qmetaobject.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qmimedata.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qmimedatabase.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qmimetype.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qobjectcleanuphandler.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qparallelanimationgroup.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qpauseanimation.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qplugin.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qpointer.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qpluginloader.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qprocess.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qpropertyanimation.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qvariantanimation.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qqueue.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qreadwritelock.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qrect.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qsize.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qregularexpression.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qresource.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qsavefile.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qscopedvaluerollback.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qsemaphore.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qsequentialanimationgroup.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qsettings.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qsharedmemory.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qsignalmapper.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qsignaltransition.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qsocketnotifier.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qsortfilterproxymodel.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qstack.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qstandardpaths.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qstate.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qstatemachine.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qstorageinfo.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qstringlistmodel.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qsystemsemaphore.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qtemporarydir.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/QScopedPointer \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qtemporaryfile.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qtextboundaryfinder.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qtextcodec.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qthread.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qthreadpool.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qthreadstorage.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qtimeline.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qtimer.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qtimezone.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qtranslator.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qurl.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qurlquery.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/quuid.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qwaitcondition.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qwineventnotifier.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qxmlstream.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qtcoreversion.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qtsqlglobal.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qsqldatabase.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qsqldriver.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qsqldriverplugin.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qsqlerror.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qsqlfield.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qsqlindex.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qsqlrecord.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qsqlquery.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qsqlquerymodel.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qsqlrelationaldelegate.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qitemdelegate.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qtwidgetsglobal.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qtguiglobal.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qtgui-config.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qtwidgets-config.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qstyleoption.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qabstractspinbox.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qwidget.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qwindowdefs.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qwindowdefs_win.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qpaintdevice.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qpalette.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qcolor.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qrgb.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qrgba64.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qbrush.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qmatrix.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qpolygon.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qregion.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qtransform.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qpainterpath.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qimage.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qpixelformat.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qpixmap.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qfont.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qfontmetrics.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qfontinfo.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qsizepolicy.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qcursor.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qkeysequence.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qevent.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qvector2d.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qtouchdevice.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qvalidator.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qicon.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qslider.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qabstractslider.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qstyle.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qtabbar.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qtabwidget.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qrubberband.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qframe.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qlistview.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qabstractitemview.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qabstractscrollarea.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtWidgets/qcombobox.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qsqlrelationaltablemodel.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qsqltablemodel.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qsqlresult.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qtsqlversion.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/QSqlQuery \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/QDebug \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtQuick/QQuickItem \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtQuick/qquickitem.h \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtQuick/qtquickglobal.h \
@@ -697,41 +1293,17 @@ release/projet.o: projet.cpp projet.h \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtQml/qtqml-config.h \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork/qtnetworkglobal.h \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtNetwork/qtnetwork-config.h \
-		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qtguiglobal.h \
-		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qtgui-config.h \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtQuick/qtquick-config.h \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtQml/qqml.h \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtQml/qqmlprivate.h \
-		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qurl.h \
-		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qurlquery.h \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtQml/qqmlparserstatus.h \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtQml/qqmlpropertyvaluesource.h \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtQml/qqmllist.h \
-		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qmetaobject.h \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtQml/qqmlcomponent.h \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtQml/qqmlerror.h \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtQml/qjsvalue.h \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/QList \
-		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qevent.h \
-		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qwindowdefs.h \
-		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qwindowdefs_win.h \
-		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qregion.h \
-		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qrect.h \
-		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qmargins.h \
-		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qsize.h \
-		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qdatastream.h \
-		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qkeysequence.h \
-		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qfile.h \
-		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qfiledevice.h \
-		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qvector2d.h \
-		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qtouchdevice.h \
-		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qfont.h \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qaccessible.h \
-		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qcoreapplication.h \
-		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/qeventloop.h \
-		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qcolor.h \
-		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qrgb.h \
-		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtGui/qrgba64.h \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtQml/QQmlApplicationEngine \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtQml/qqmlapplicationengine.h \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtQml/qqmlengine.h \
@@ -986,6 +1558,7 @@ release/basededonnees.o: basededonnees.cpp basededonnees.h \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qsqltablemodel.h \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qsqlresult.h \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/qtsqlversion.h \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtSql/QSqlQuery \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/include/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\basededonnees.o basededonnees.cpp
 

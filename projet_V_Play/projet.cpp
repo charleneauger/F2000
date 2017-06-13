@@ -6,6 +6,7 @@
 #include <QtSerialPort/QSerialPortInfo>
 #include <QQmlApplicationEngine>
 #include <QStringList>
+#include "basededonnees.h"
 
 projet::projet(QObject *parent) : QObject(parent)
 {
@@ -62,14 +63,14 @@ void projet::deconnexion() //Deconnexion du port
 void projet::readData() //Lecture des donnees reçues sur le port
 {
     data+=serial->readAll();
-    qDebug()<<"data: "<<data;
+    //qDebug()<<"data: "<<data;
 
         if (data.contains ('\n', Qt::CaseInsensitive))
         {
               TextData = data.left(data.indexOf('\n'));
-              qDebug()<<"texte: "<<TextData;
+              //qDebug()<<"texte: "<<TextData;
               data=data.right(data.length()-data.indexOf('\n')-1);
-              qDebug()<<"data: "<<data;
+              //qDebug()<<"data: "<<data;
 
               QStringList List = TextData.split(',', QString::SkipEmptyParts);  //Decoupage des donnees reçues
 
@@ -84,10 +85,12 @@ void projet::readData() //Lecture des donnees reçues sur le port
               ValeurLONG = List.at(4).toFloat();
               qDebug()<<ValeurLONG;
               Debit = List.at(5).toFloat();
+              Vitesse = List.at(6).toFloat();
 
               emit gpsLatitude(ValeurLAT, ValeurLONG);
+              emit sendToDataBase(ValeurLAT, ValeurLONG, ValeurX, ValeurY, ValeurZ, Debit, Vitesse);
 
-              Donnees = "X="+List[0]+"m/s²"+"\r\n"+"Y="+List[1]+"m/s²"+"\r\n"+"Z="+List[2]+"m/s²"+"\r\n"+"LAT="+List[3]+"\r\n"+"LONG="+List[4]+"\r\n"+"DEBIT="+List[5]+"\r\n";
+              Donnees = "X="+List[0]+"m/s²      "+"Y="+List[1]+"m/s²      "+"Z="+List[2]+"m/s²"+"\r\n"+"LAT="+List[3]+"      "+"LONG="+List[4]+"\r\n"+"DEBIT="+List[5]+"L/min      "+"VITESSE="+List[6]+"km/h\r\n";
               qDebug()<<Donnees;
               emit testData(Donnees);
               QCoreApplication::processEvents();

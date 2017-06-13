@@ -92,11 +92,15 @@ Makefile: projet_V_Play.pro C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspec
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_bluetooth.pri \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_bluetooth_private.pri \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_bootstrap_private.pri \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_charts.pri \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_charts_private.pri \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_clucene_private.pri \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_concurrent.pri \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_concurrent_private.pri \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_core.pri \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_core_private.pri \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_datavisualization.pri \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_datavisualization_private.pri \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_dbus.pri \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_dbus_private.pri \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_designer.pri \
@@ -107,6 +111,8 @@ Makefile: projet_V_Play.pro C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspec
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_eventdispatcher_support_private.pri \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_fb_support_private.pri \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_fontdatabase_support_private.pri \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_gamepad.pri \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_gamepad_private.pri \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_gui.pri \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_gui_private.pri \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_help.pri \
@@ -119,6 +125,8 @@ Makefile: projet_V_Play.pro C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspec
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_multimediawidgets_private.pri \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_network.pri \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_network_private.pri \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_networkauth.pri \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_networkauth_private.pri \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_nfc.pri \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_nfc_private.pri \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_opengl.pri \
@@ -131,6 +139,8 @@ Makefile: projet_V_Play.pro C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspec
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_positioning_private.pri \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_printsupport.pri \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_printsupport_private.pri \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_purchasing.pri \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_purchasing_private.pri \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_qml.pri \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_qml_private.pri \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_qmldebug_private.pri \
@@ -146,6 +156,10 @@ Makefile: projet_V_Play.pro C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspec
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_quicktemplates2_private.pri \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_quickwidgets.pri \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_quickwidgets_private.pri \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_script.pri \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_script_private.pri \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_scripttools.pri \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_scripttools_private.pri \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_scxml.pri \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_scxml_private.pri \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_sensors.pri \
@@ -160,6 +174,8 @@ Makefile: projet_V_Play.pro C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspec
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_svg_private.pri \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_testlib.pri \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_testlib_private.pri \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_texttospeech.pri \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_texttospeech_private.pri \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_theme_support_private.pri \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_uiplugin.pri \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_uitools.pri \
@@ -208,9 +224,9 @@ Makefile: projet_V_Play.pro C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspec
 		projet_V_Play.pro \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/lib/qtmaind.prl \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/lib/VPlay.prl \
+		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/lib/Qt5Widgets.prl \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/lib/Qt5Location.prl \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/lib/Qt5Quick.prl \
-		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/lib/Qt5Widgets.prl \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/lib/Qt5Multimedia.prl \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/lib/Qt5Gui.prl \
 		C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/lib/Qt5Sql.prl \
@@ -254,11 +270,15 @@ C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_axserver_pr
 C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_bluetooth.pri:
 C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_bluetooth_private.pri:
 C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_bootstrap_private.pri:
+C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_charts.pri:
+C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_charts_private.pri:
 C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_clucene_private.pri:
 C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_concurrent.pri:
 C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_concurrent_private.pri:
 C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_core.pri:
 C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_core_private.pri:
+C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_datavisualization.pri:
+C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_datavisualization_private.pri:
 C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_dbus.pri:
 C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_dbus_private.pri:
 C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_designer.pri:
@@ -269,6 +289,8 @@ C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_egl_support
 C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_eventdispatcher_support_private.pri:
 C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_fb_support_private.pri:
 C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_fontdatabase_support_private.pri:
+C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_gamepad.pri:
+C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_gamepad_private.pri:
 C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_gui.pri:
 C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_gui_private.pri:
 C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_help.pri:
@@ -281,6 +303,8 @@ C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_multimediaw
 C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_multimediawidgets_private.pri:
 C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_network.pri:
 C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_network_private.pri:
+C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_networkauth.pri:
+C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_networkauth_private.pri:
 C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_nfc.pri:
 C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_nfc_private.pri:
 C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_opengl.pri:
@@ -293,6 +317,8 @@ C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_positioning
 C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_positioning_private.pri:
 C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_printsupport.pri:
 C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_printsupport_private.pri:
+C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_purchasing.pri:
+C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_purchasing_private.pri:
 C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_qml.pri:
 C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_qml_private.pri:
 C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_qmldebug_private.pri:
@@ -308,6 +334,10 @@ C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_quickpartic
 C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_quicktemplates2_private.pri:
 C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_quickwidgets.pri:
 C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_quickwidgets_private.pri:
+C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_script.pri:
+C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_script_private.pri:
+C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_scripttools.pri:
+C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_scripttools_private.pri:
 C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_scxml.pri:
 C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_scxml_private.pri:
 C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_sensors.pri:
@@ -322,6 +352,8 @@ C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_svg.pri:
 C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_svg_private.pri:
 C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_testlib.pri:
 C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_testlib_private.pri:
+C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_texttospeech.pri:
+C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_texttospeech_private.pri:
 C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_theme_support_private.pri:
 C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_uiplugin.pri:
 C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/modules/qt_lib_uitools.pri:
@@ -370,9 +402,9 @@ C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/mkspecs/features/lex.prf:
 projet_V_Play.pro:
 C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/lib/qtmaind.prl:
 C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/lib/VPlay.prl:
+C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/lib/Qt5Widgets.prl:
 C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/lib/Qt5Location.prl:
 C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/lib/Qt5Quick.prl:
-C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/lib/Qt5Widgets.prl:
 C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/lib/Qt5Multimedia.prl:
 C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/lib/Qt5Gui.prl:
 C:/Users/Utilisateur/V-PlaySDK/5.8/mingw53_32/lib/Qt5Sql.prl:

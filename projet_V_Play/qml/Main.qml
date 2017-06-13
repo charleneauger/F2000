@@ -8,9 +8,8 @@ import QtQuick.Extras 1.4
 import QtQuick.Layouts 1.2
 import QtQuick.Window 2.0
 
+
 App {
-    width: 980
-    height: 850
     id:app
 
     NavigationStack {
@@ -19,6 +18,13 @@ App {
             id:principale
             title: qsTr("")
             visible: true
+
+            Connections{
+                target: database
+               /* onHistorique:{basededonnees.visible=true;
+                    mousehistorique.visible=true;}*/
+            }
+
             Image {
                 id:lamo
                 source: "../assets/lyceelogo.jpg"
@@ -30,25 +36,75 @@ App {
                 anchors.horizontalCenter: lamo.horizontalCenter
                 anchors.top: lamo.bottom
                 anchors.topMargin: 20
-                text: "Accéder à la connexion"
+                text: "Visualisation temps réel"
+            }
 
+            MouseArea {
+                id: mouseconnexionbt
+                width: connexionbt.width
+                height: connexionbt.height
+                anchors.horizontalCenter: lamo.horizontalCenter
+                anchors.top: lamo.bottom
+                anchors.topMargin: 20
+                hoverEnabled: true
+                cursorShape: Qt.PointingHandCursor
                 onClicked: {
                   principale.navigationStack.push(Qt.resolvedUrl("connexion.qml"));
                 }
-               }
+            }
 
             AppButton {
                 id:basededonnees
+                //visible: false
                 anchors.horizontalCenter: connexionbt.horizontalCenter
                 anchors.top: connexionbt.bottom
                 anchors.topMargin: 20
-                text: "Accéder à l'historique"
+                text: "Historique"
+            }
 
+            MouseArea {
+                id: mousehistorique
+                //visible: false
+                width: basededonnees.width
+                height: basededonnees.height
+                anchors.horizontalCenter: connexionbt.horizontalCenter
+                anchors.top: connexionbt.bottom
+                anchors.topMargin: 20
+                hoverEnabled: true
+                cursorShape: Qt.PointingHandCursor
                 onClicked: {
                   principale.navigationStack.push(Qt.resolvedUrl("basededonneesqml.qml"));
                 }
-               }
-        }
+            }
 
+            AppButton{
+                id: parametre
+                anchors.top: parent.TopRight
+                width: 80
+                height: 80
+                tooltip: "Cliquer pour accéder aux paramètres de connexion"
+                style: ButtonStyle{
+                    background: Image {
+                        source: "../assets/parametre.png"
+                    }
+                }
+            }
+
+            MouseArea {
+                id:mouseparametre
+                width: parametre.width
+                height: parametre.height
+                x:parametre.x
+                y:parametre.y
+                hoverEnabled: true
+                cursorShape: Qt.PointingHandCursor
+                onClicked: {
+                  principale.navigationStack.push(Qt.resolvedUrl("connexionbdd.qml"));
+                }
+            }
+
+
+
+        }
     }
 }

@@ -148,5 +148,6 @@ void basededonnees::recupValeurCombobox(QString date, QString courbe)
 basededonnees::~basededonnees()
 {
     db.close();
+    delete Query;
     qDebug()<<"vous êtes parti";
 }
